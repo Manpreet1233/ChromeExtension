@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "authentication",
+    "version": "1.0",
+    "chrome_url_overrides" : {
+        "newtab": "login.html"
+    },
+    "background": {
+        "page": "login.html",
+        "persistent": false
+    },
+    "description": "user authentication",
+    "icon" : {
+        "128": "icon128.png",
+        "48": "icon48.png",
+        "16": "icon16"
+    },
+    "content_security_policy": "script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'"
+}
